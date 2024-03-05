@@ -5,17 +5,19 @@ function Entry(props){
 
    return(<>
    
-   <div className=" p-2 input-group mb-3">
-        <span className="input-group-text" id="basic-addon1">{props.label}</span>
-        <input type={props.type} className=" entry form-control" placeholder={props.placeholder} aria-label={props.label} aria-describedby="basic-addon1"/>
+   <div className="form-floating">
+      <input type={props.type} className="entry form-control" id={props.id} placeholder={props.placeholder}/>
+      <label htmlFor={props.id}>{props.label}</label>
     </div>
    </>);
 }
 
+
 Entry.propTypes = {
     label: PropTypes.string,
     type: PropTypes.string,
-    placeholder: PropTypes.string
+    placeholder: PropTypes.string,
+    id:PropTypes.string
 }
 Entry.defualtProps ={
     label: "LABEL",

@@ -4,10 +4,32 @@
     border: 0;
     box-shadow: 3px 2px #020099A0;
     padding: 10px 20px;
-    transition: background 0.3s ease; /* Add a smooth transition for better UX */
+    transition: background 0.3s ease; 
+    /* Add a smooth transition for better UX */
   }
   
-  .btn-hover:hover {
-    background: #a8a5e9;
+  .btn:hover {
+    background: #110071e8;
+    box-shadow: rgba(165, 153, 249, 0.959) 0 0 5px 1.2px;
+    color:#FFFFFF;
     cursor: pointer;
   }
+
+.entry {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  margin-bottom: 1.5vh;
+  border: 0;
+  background-color: #E7EDFF;
+  color:#071d26bd;
+}
+.entry:hover{
+  box-shadow: rgba(165, 153, 249, 0.959) 0 0 5px 1.2px;
+}
+
+.form{
+  margin-right: 10%;
+}
+body{
+  background:#573dec6f;
+}
