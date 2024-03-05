@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Button from "./components/Button";
+import Entry from "./components/entry"
 
 function App() {
-  const [count, setCount] = useState(0)
+    return(<>
+    <main className="d-flex align-items-right py-5">
+        <div className="dw-150 m-auto" 
+        style={{textAlign:"center",background:"linear-gradient(#01001c,#020026,#02002f,#353359,#bbb1fa)",
+         borderRadius:"20px",padding:"50px"}}>
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+            <h2 style={{color:"#D6EAF9"}}>Sign In</h2>
+            <hr style={{borderColor:"#DFDFDF"}}/>
+            <Entry type={'text'} placeholder={'Username'} label={"User Name"} />
+            <Entry type={'email'} placeholder={'Email'} label={"Email"} />
+            <Entry type={'password'} placeholder={'Password'} label={"Password"} />
+            <Button text={"Sign In"}/>
+        </div>
+    </main>
+    </>);
+
 }
 
 export default App
+
