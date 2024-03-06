@@ -2,13 +2,13 @@ import Button from "../components/Button.jsx";
 import Entry from "../components/entry.jsx"
 function Form(){
     return(<>
-        <main className="d-flex justify-content-end py-5">
-        <div className="dw-150 form" 
-        style={{textAlign:"center",background:"linear-gradient(#01001c,#020026,#02002f,#353359,#bbb1fa)",
-         borderRadius:"20px",padding:"50px"}}>
+        <div  className="d-flex justify-content-end py-5">
+        <div className="form "
+        style={{zIndex:1,textAlign:"center",background:"#020026",
+         borderRadius:"20px",padding:"40px 75px 40px 75px"}}>
 
             <h2 style={{color:"#D6EAF9"}}>Sign In</h2>
-            <hr style={{borderColor:"#DFDFDF"}}/>
+            <hr style={{borderColor:"#FFFFFF"}}/>
             <form action="POST">
                 <Entry type={'text'} placeholder={'Username'} label={"User Name"} id={"Username"}/>
                 <Entry type={'email'} placeholder={'Email'} label={"Email"} id={"email"}/>
@@ -21,7 +21,7 @@ function Form(){
             </form>
            
         </div>
-    </main>
+    </div>
     
     </>);
 }

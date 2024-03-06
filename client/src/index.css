@@ -1,15 +1,15 @@
 .btn {
-    background: #060029e8;
+    background: #623ac7;
     color: #FFFFFF;
     border: 0;
-    box-shadow: 3px 2px #020099A0;
+    box-shadow: 3px 2px #e6d5ff;
     padding: 10px 20px;
     transition: background 0.3s ease; 
     /* Add a smooth transition for better UX */
   }
   
   .btn:hover {
-    background: #110071e8;
+    background: #3b00a7e8;
     box-shadow: rgba(165, 153, 249, 0.959) 0 0 5px 1.2px;
     color:#FFFFFF;
     cursor: pointer;
@@ -24,12 +24,22 @@
   color:#071d26bd;
 }
 .entry:hover{
-  box-shadow: rgba(165, 153, 249, 0.959) 0 0 5px 1.2px;
+  box-shadow: rgb(233, 232, 241) 0 0 5px 1.2px;
 }
 
 .form{
   margin-right: 10%;
 }
-body{
-  background:#573dec6f;
+.img-container{
+  display: flex;
+  z-index: -1;
+  position: absolute;
+  left:calc(35% + 1em);
+  opacity: 25%;
+}
+.img-pos{
+  display: inline;
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
 }
